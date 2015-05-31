@@ -221,7 +221,7 @@ input[type="phone"] {
   left: 0;
   background:
      -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, .1))),
-     url("https://dl.dropboxusercontent.com/u/11221717/green-light/869E10A625-blur2.jpg") no-repeat center center fixed;
+     url("https://dl.dropboxusercontent.com/u/11221717/green-light/869E10A625-blur2.jpg") no-repeat center center;
 
   background-size: cover;
 }
@@ -289,7 +289,7 @@ section.statement {
   color: #fff;
   background:
      -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, .1))),
-     url("https://dl.dropboxusercontent.com/u/11221717/green-light/1C1A9389B4.jpg") no-repeat center center fixed;
+     url("https://dl.dropboxusercontent.com/u/11221717/green-light/1C1A9389B4.jpg") no-repeat center center;
   background-size: cover;
 }
 
