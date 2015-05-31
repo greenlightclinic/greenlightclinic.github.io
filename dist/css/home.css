@@ -35,9 +35,16 @@ strong {
 em {
   font-style: italic; }
 
-textarea:focus, input:focus{
-    outline: 0;
+.form-control:focus,
+.form-control:active,
+textarea:focus, 
+input:focus {
+  outline: 0;
+  border-color: #95AB63;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(148,170,98,0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(148,170,98,0.6);
 }
+
 
 a {
   color: #59bfc7;
@@ -45,13 +52,6 @@ a {
 
 a:hover {
   color: #59bfc7;
-}
-
-i.fa-thank-you {
-  color: #59bfc7;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-shadow: 0 1px 4px rgba(75,75,75,0.99);
 }
 
 .navbar.navbar-default {
@@ -282,6 +282,48 @@ section.feelings {
   color: #ee3727;  
 }
 
+.fa-animated { 
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease; 
+  transition: all 0.3s ease;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.fa-animated:hover {
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+.fa-animated::after {
+  content : "";
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+  border-bottom: 2px solid inherit;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease; 
+  transition: all 0.3s ease;
+  border-radius: 90px;
+}
+
+.fa-animated:hover::after {
+  left: 20%;
+  right: 20%;
+  width: 60%;
+  border-bottom: 1px solid inherit;
+}
+
 /* STATEMENT -----------------*/
 
 section.statement {
@@ -296,14 +338,18 @@ section.statement {
 .lead-statement {
   color: #fff;
   line-height: 1.9;
-  font-weight: 200;
+  font-weight: 300;
+  font-size: 22px;
 }
-
 
 /* SERVICES -----------------*/
 
 section.services {
   padding: 10rem 0 10rem 0;
+}
+
+.section-lead {
+  color: #94aa62;
 }
 
 ul.glc-services > li {
@@ -318,11 +364,11 @@ ul.glc-services > li {
 ul.glc-services > li:before {
   content: "⦾";
   font-family: Arial, Helvetica, sans-serif;
-  color: #95a83a;
-  font-size: 16px;
+  color: #3e246b;
+  font-size: 24px;
   padding-right: 15px;
   position: relative;
-  top: -3px;
+  top: 2px;
 }
 
 
