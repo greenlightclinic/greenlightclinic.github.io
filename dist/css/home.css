@@ -54,6 +54,10 @@ a:hover {
   color: #59bfc7;
 }
 
+.grn {
+  color: #95AB63;
+}
+
 .navbar.navbar-default {
   background: transparent !important;
   border: none !important;
@@ -220,7 +224,7 @@ input[type="phone"] {
   right: 0;
   left: 0;
   background:
-     -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, .1))),
+     -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, .5))),
      url("https://dl.dropboxusercontent.com/u/11221717/green-light/869E10A625-blur2.jpg") no-repeat center center;
 
   background-size: cover;
@@ -352,13 +356,19 @@ section.services {
   color: #94aa62;
 }
 
+.glc-service-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+
 ul.glc-services > li {
-  padding: 20px 15px 7px 5px;
   margin-left: 30px;
   font-size: 16px;
   list-style: none;
   color: #4f636d;
   text-indent: -23px;
+  line-height: 1.6;
 }
 
 ul.glc-services > li:before {
@@ -371,7 +381,104 @@ ul.glc-services > li:before {
   top: 2px;
 }
 
+/* GETTING STARTED -----------------*/
 
+section.getting-started {
+  padding: 10rem 0 10rem 0;
+  background: #3e246b;
+  color: #fff;
+}
+
+.lead.lead-started {
+  color: #fff;
+  width: 90%;
+  margin: 20px auto 40px;
+}
+
+/* FLY OUT -----------------*/
+
+#building-blocks {
+  position: fixed;
+  z-index: 2000;
+  right: 0;
+  bottom: 15rem;
+  -webkit-backface-visibility: hidden;
+  cursor: pointer;
+}
+
+#building-blocks .block {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  float: right;
+  clear: both;
+  overflow: hidden;
+  border-radius: .5rem 0 0 .5rem;
+  margin: .5rem 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  width: 8rem;
+  height: 8rem;
+}
+
+#building-blocks .block .tab {
+  font-family: "open sans", sans-serif;
+  float: left;
+  height: 100%;
+  padding-top: 2rem;
+  width: 8rem;
+  background-color: #94aa62;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#building-blocks .block .tab i {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon-container {
+  margin: 0 auto .24rem;
+  background: #fff;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 100%;
+  padding-top: 1px;
+}
+
+i.icon-info {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+.fa-info {
+  margin-top: 1px;
+  color: #94aa62;
+}
+
+/* MODAL -----------------*/
+
+.modal-content {
+  margin-top: 40%;
+}
+
+.modal-header {
+  background: #94aa62;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.call-lead:before {
+  border: 2px solid green;
+}
+
+.call-lead:after {
+  border: 2px solid green;
+}
 
 
 /* Large screens ----------- */

@@ -15,7 +15,8 @@
 <link href="./dist/css/home.css" rel="stylesheet">
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,300|Open+Sans+Condensed:300,400,500,600,700" rel="stylesheet" type="text/css">
-<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script defer src="./dist/js/bootstrap.min.js"></script>
 <script defer src="./dist/js/app.js"></script>
 <!-- <link rel="shortcut icon" href="https://s3.amazonaws.com/honeybook_cdn/assets_system/system_web/main_general/favicon.ico"> -->
 
@@ -41,7 +42,7 @@
         </div>
        <div class="col-lg-4">
           <div class="input-group input-group-lg">
-            <input type="text" class="form-control" placeholder="Your Email">
+            <input type="text" class="form-control" placeholder="Get Updates">
             <span class="input-group-btn">
               <button class="btn btn-default" type="button">Go!</button>
             </span>
@@ -75,7 +76,7 @@
                   <div class="">
                       <!-- <button class="btn btn-primary btn-lg btn-home" id="home-sign-up">APPLY NOW</button> -->
                       <div class="text-center">
-                          <button id="home-btn" track="~request form" class="btn btn-primary btn-lg btn-home">TALK TO US</button>
+                          <button href="#myModal" id="#myModal" class="btn btn-primary btn-lg btn-home" data-toggle="modal" data-target="#myModal">TALK TO US</button>
                       </div>
                   </div>
               </div>
@@ -125,7 +126,7 @@
   <section class="services">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6">
+			<div class="col-lg-6 col-md-6 col-sm-6">
 				<div class="glc-service-container">
 					<h2 class="section-lead">Greenlight Clinic Goals</h2>
 					<ul class="glc-services">
@@ -134,11 +135,10 @@
 						<li>Help communicate feelings</li>
 						<li>Help to navigate through any crisis</li>
 						<li>Help to stabilize through any situation</li>
-						<li></li>
 					</ul>
 				</div>	
 			</div>
-			<div class="col-lg-5 col-md-6 col-sm-6">
+			<div class="col-lg-6 col-md-6 col-sm-6">
 				<div class="glc-service-container">
 					<h2 class="section-lead">Greenlight Clinic Process</h2>
 					<ul class="glc-services">
@@ -154,10 +154,75 @@
 		</div>
 	</div>
 </section>
-  
+  <section class="getting-started">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-lg-4">
+				<h3>1) Contact Us</h3>
+				<p class="lead lead-started">Call or email us and we'll schedule a time to chat</p>
+				<i class="fa fa-phone fa-5x"></i>
+			</div>
+			<div class="col-lg-4">
+				<h3>2) Consultation</h3>
+				<p class="lead lead-started">We start with a one-on-one consultation to asses your needs</p>
+				<i class="fa fa-coffee fa-5x"></i>
+			</div>
+			<div class="col-lg-4">
+				<h3>3) Support Plan</h3>
+				<p class="lead lead-started">Together, we'll develop a support plan that works for you!</p>
+				<i class="fa fa-support fa-5x"></i>
+			</div>
+		</div>
+	</div>
+</section>
+    <section class="footer">
+  	<div class="container text-center">
+  		<div style="padding-top:20px;padding-bottom:20px;" class="row">
+  			<h3>About Green Light Clinic | Contact Us</h3>
+  		</div>
+  		<p style="padding-top:20px;">All Rights Reserved, Green Light Clinic 2015</p>
+  	</div>
+  </section>
 </main>
 
   </body>
+  <div id="building-blocks" href="#building-blocks" id="#building-blocks" data-toggle="modal" data-target="#myModal">
+ 	<div class="block">
+ 		<div class="tab">
+      <div class="icon-container">
+         <i class="fa fa-info"></i>
+      </div>
+  		<span>Learn More</span>
+	  </div>
+  </div>
+</div>
+  <script type="text/javascript">
+  $('#myModal').modal('show');
+  $('#building-blocks').modal('show');
+</script>
+<!-- Modal -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#myModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title text-center" id="myModalLabel">We want to hear from you</h3>
+      </div>
+      <div class="modal-body text-center">
+      <h3 class="call-lead">Call Us</h3>
+      <br>
+      <h1 class="grn">555-555-5555</h1>
+      <br>
+      <h3 class="call-lead">Email Us</h3>
+      <br>
+      <h3 class="grn">hello@greenlightclinic.org</h3>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center terms-lead">Completely Free • No Commitment • Safe • Confidential</p>
+      </div>
+    </div>
+  </div>
+</div>
 </html>
 <!-- Google Analytics -->
 <script>
